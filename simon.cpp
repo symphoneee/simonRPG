@@ -1,10 +1,10 @@
 
 #include <string>
-#include "SIMON.HPP"
+#include "simon.hpp"
 
 
 
-simon::simon(double hp, double str, double def, double vit, double ap){
+simon::simon(){
     
     setHP(hp);
     setStr(str);
