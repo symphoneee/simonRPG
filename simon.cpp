@@ -3,16 +3,6 @@
 #include "simon.hpp"
 
 
-
-simon::simon(){
-    
-    setHP(hp);
-    setStr(str);
-    setDef(def);
-    setVit(vit);
-    setAp(ap);
-}
-
 void simon::setHp(double h){
     hp = h;
 }

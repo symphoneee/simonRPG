@@ -5,7 +5,7 @@ class simon{
 
     public:
         
-        void setHP(double);
+        void setHp(double);
         void setStr(double);
         void setDef(double);
         void setVit(double);
