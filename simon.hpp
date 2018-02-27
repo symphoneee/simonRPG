@@ -11,9 +11,11 @@ class simon{
         void setVit(double);
         void setAp(double);
 
+        double getHp();
+
     private:
 
-        double  hp;
+        double hp;
         double str;
         double def;
         double vit;

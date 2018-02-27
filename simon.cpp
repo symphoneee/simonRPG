@@ -23,6 +23,10 @@ void simon::setAp(double a){
     ap = a;
 }
 
+double simon::getHp(){
+    return hp;
+
+}
 
 
 
