@@ -21,6 +21,17 @@ void simon::setAp(double a){
     ap = a;
 }
 
+void simon::setInb(double i){
+    inb = i;
+}
+
+void simon::setinItem(std::string s, int i){
+    inItem = s;
+    inb = i;
+}
+
+
+
 double simon::getHp(){
     return hp;
 }
@@ -30,7 +41,7 @@ double simon::getStr(){
 }
 
 double simon::getDef(){
-    return def;
+    return def + inb;
 }
 
 double simon::getVit(){
@@ -45,7 +56,7 @@ double simon::getDmg(){
     return atk;
 }
 
-double simon::getAdf(){
-    return adf;
+std::string simon::getinItem(){
+    return inItem;
 }
 

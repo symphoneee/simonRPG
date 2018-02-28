@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 
 class simon{
 
@@ -9,6 +10,8 @@ class simon{
         void setDef(double);
         void setVit(double);
         void setAp(double);
+        void setInb(double);
+        void setinItem(std::string, int);
 
         double getHp();
         double getStr();
@@ -17,7 +20,9 @@ class simon{
         double getAp();
 
         double getDmg();
-        double getAdf();
+        
+        std::string getinItem();
+
 
     private:
 
@@ -28,7 +33,10 @@ class simon{
         double ap;
 
         double dmg;
-        double adf;
         double atk;
+        double inb;
+        
+        std::string inItem;
+        ;
 
 };
