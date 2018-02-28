@@ -11,6 +11,10 @@ class simon{
         void setAp(double);
 
         double getHp();
+        double getStr();
+        double getDef();
+        double getVit();
+        double getAp();
 
     private:
 
@@ -19,6 +23,5 @@ class simon{
         double def;
         double vit;
         double ap;
-
 
 };

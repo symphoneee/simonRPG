@@ -6,21 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/Users/trial/simonRPG/simonRPG/SIMON.hpp
+/Users/trial/simonRPG/simonRPG/SIMON.HPP
 iostream
 -
 
 /Users/trial/simonRPG/simonRPG/main.cpp
 iostream
 -
-SIMON.hpp
-/Users/trial/simonRPG/simonRPG/SIMON.hpp
+SIMON.HPP
+/Users/trial/simonRPG/simonRPG/SIMON.HPP
 
 /Users/trial/simonRPG/simonRPG/simon.cpp
-simon.hpp
-/Users/trial/simonRPG/simonRPG/simon.hpp
-
-/Users/trial/simonRPG/simonRPG/simon.hpp
-iostream
--
+SIMON.HPP
+/Users/trial/simonRPG/simonRPG/SIMON.HPP
 

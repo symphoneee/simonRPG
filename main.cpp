@@ -1,22 +1,27 @@
 #include <iostream>
-#include "SIMON.hpp"
+
+#include "SIMON.HPP"
 
 
 int main () {
 
     simon s1;    
-    simon s2;
-    simon s3;
-    simon s4;
 
     s1.setHp(69);
-    std::cout << "Simon 1's current HP is " << s1.getHp() << std::endl;
+    s1.setStr(69);
+    s1.setDef(69);
+    s1.setVit(69);
+    s1.setAp(69);
     
-    s2.setHp(70);
-    std::cout << "Simon 2's current HP is " << s2.getHp() << std::endl;
+    std::cout << "Simon's current stats:" << std::endl;
+    std::cout << "---------****---------" << std::endl;
+    std::cout << "|    HP:  " << s1.getHp() << "         |" << std::endl;
+    std::cout << "|    STR: " << s1.getStr() << "         |" << std::endl;
+    std::cout << "|    DEF: " << s1.getDef() << "         |" << std::endl;
+    std::cout << "|    VIT: " << s1.getVit() << "         |" << std::endl;
+    std::cout << "|    AP:  " << s1.getAp() << "         |" << std::endl;
+    std::cout << "---------****---------" << std::endl;
     
-    s3.setHp(71);
-    std::cout << "Simon 3's current HP is " << s3.getHp() << std::endl;
 
     return 0;
 };
