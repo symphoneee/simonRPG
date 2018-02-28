@@ -7,11 +7,11 @@ int main () {
 
     simon s1;    
 
-    s1.setHp(69);
-    s1.setStr(69);
-    s1.setDef(69);
-    s1.setVit(69);
-    s1.setAp(69);
+    s1.setHp(50);
+    s1.setStr(24);
+    s1.setDef(23);
+    s1.setVit(27);
+    s1.setAp(10);
     
     std::cout << "Simon's current stats:" << std::endl;
     std::cout << "---------****---------" << std::endl;

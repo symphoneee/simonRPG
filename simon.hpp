@@ -16,6 +16,9 @@ class simon{
         double getVit();
         double getAp();
 
+        double getDmg();
+        double getAdf();
+
     private:
 
         double hp;
@@ -23,5 +26,9 @@ class simon{
         double def;
         double vit;
         double ap;
+
+        double dmg;
+        double adf;
+        double atk;
 
 };

@@ -1,5 +1,6 @@
 #include "SIMON.HPP"
 
+
 void simon::setHp(double h){
     hp = h;
 }
@@ -22,28 +23,29 @@ void simon::setAp(double a){
 
 double simon::getHp(){
     return hp;
-
 }
 
 double simon::getStr(){
     return str;
-
 }
 
 double simon::getDef(){
     return def;
-
 }
 
 double simon::getVit(){
     return vit;
-
 }
 
 double simon::getAp(){
     return ap;
-
 }
 
+double simon::getDmg(){
+    return atk;
+}
 
+double simon::getAdf(){
+    return adf;
+}
 
