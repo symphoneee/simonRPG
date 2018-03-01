@@ -1,6 +1,10 @@
 #include "SIMON.HPP"
 
 
+void simon::setLvl(double l){
+    lvl = l;
+}
+
 void simon::setHp(double h){
     hp = h;
 }
@@ -21,16 +25,20 @@ void simon::setAp(double a){
     ap = a;
 }
 
-void simon::setInb(double i){
-    inb = i;
-}
-
 void simon::setinItem(std::string s, int i){
     inItem = s;
     inb = i;
 }
 
+void simon::setWeapon(std::string w, int i){
+    weapon = w;
+    wnb = i;
+}
 
+
+double simon::getLvl(){
+    return lvl;
+}
 
 double simon::getHp(){
     return hp;
@@ -41,7 +49,7 @@ double simon::getStr(){
 }
 
 double simon::getDef(){
-    return def + inb;
+    return (vit / 2) + def + inb;
 }
 
 double simon::getVit(){
@@ -53,10 +61,14 @@ double simon::getAp(){
 }
 
 double simon::getDmg(){
-    return atk;
+    return (str / 2) + wnb;
 }
 
 std::string simon::getinItem(){
     return inItem;
+}
+
+std::string simon::getWeapon(){
+    return weapon;
 }
 
