@@ -17,6 +17,8 @@ int main () {
     s1.setWeapon("Olive Sword", 15);
 
     
+    std::cout << "                      " << std::endl;
+    std::cout << "                      " << std::endl;
     std::cout << "-------||+~~+||-------" << std::endl;
     std::cout << "Simon's current stats:" << std::endl;
     std::cout << "---------****---------" << std::endl;
@@ -32,6 +34,8 @@ int main () {
     std::cout << "---------****---------" << std::endl;
     std::cout << "     T.W.A.O.K.K.     " << std::endl;
     std::cout << "-------||+~~+||-------" << std::endl;
+    std::cout << "                      " << std::endl;
+    std::cout << "                      " << std::endl;
     
 
     return 0;
