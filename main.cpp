@@ -6,20 +6,43 @@
 int main () {
 
     simon s1;    
+    std::string player;
+    double level;
+    double hitpoints;
+    double strength;
+    double defense;
+    double vitality;
+    double abilitypoints;
 
-    s1.setLvl(11);
-    s1.setHp(50);
-    s1.setStr(24);
-    s1.setDef(27);
-    s1.setVit(27);
-    s1.setAp(10);
+
+    std::cout << "Enter your name:" << std::endl;
+    std::cin >> player;
+    std::cout << "Enter your level:" << std::endl;
+    std::cin >> level;
+    std::cout << "Enter your HP:" << std::endl;
+    std::cin >> hitpoints;
+    std::cout << "Enter your strength:" << std::endl;
+    std::cin >> strength;
+    std::cout << "Enter your defense:" << std::endl;
+    std::cin >> defense;
+    std::cout << "Enter your vitality:" << std::endl;
+    std::cin >> vitality;
+    std::cout << "Enter your AP:" << std::endl;
+    std::cin >> abilitypoints;
+
+    s1.setLvl(level);
+    s1.setHp(hitpoints);
+    s1.setStr(strength);
+    s1.setDef(defense);
+    s1.setVit(vitality);
+    s1.setAp(abilitypoints);
     s1.setinItem("Bus Tub", 5);
     s1.setWeapon("Olive Sword", 15);
 
     std::cout << "                      " << std::endl;
     std::cout << "                      " << std::endl;
     std::cout << "-------||+~~+||-------" << std::endl;
-    std::cout << "Simon's current stats:" << std::endl;
+    std::cout << player << "'s current stats:" << std::endl;
     std::cout << "---------****---------" << std::endl;
     std::cout << "     LVL: " << s1.getLvl()  << std::endl;
     std::cout << "     HP:  " << s1.getHp()  << std::endl;
