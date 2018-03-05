@@ -40,8 +40,8 @@ void simon::setWeapon(std::string w, int i){
 }
 
 void simon::displayStats(){
-    std::cout << "                      " << std::endl;
-    std::cout << "                      " << std::endl;
+    std::cout << " " << std::endl;
+    std::cout << " " << std::endl;
     std::cout << "-------||+~~+||-------" << std::endl;
     std::cout << name << "'s current stats:" << std::endl;
     std::cout << "---------****---------" << std::endl;
@@ -52,13 +52,13 @@ void simon::displayStats(){
     std::cout << "     VIT: " << getVit() << std::endl;
     std::cout << "     AP:  " << getAp() << std::endl;
     std::cout << "     DMG: " << getDmg() << std::endl;
-    std::cout << "     WPN: " << getWeapon() << std::endl;
+    std::cout << "     WPN: " << weapon << std::endl;
     std::cout << "     INV: " << inItem << std::endl;
     std::cout << "---------****---------" << std::endl;
     std::cout << "     T.W.A.O.K.K.     " << std::endl;
     std::cout << "-------||+~~+||-------" << std::endl;
-    std::cout << "                      " << std::endl;
-    std::cout << "                      " << std::endl;
+    std::cout << " " << std::endl;
+    std::cout << " " << std::endl;
 }
 
 double simon::getLvl(){
@@ -88,12 +88,3 @@ double simon::getAp(){
 double simon::getDmg(){
     return (str / 2) + wnb;
 }
-
-std::string simon::getinItem(){
-    return inItem;
-}
-
-std::string simon::getWeapon(){
-    return weapon;
-}
-
