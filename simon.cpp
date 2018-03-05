@@ -1,7 +1,6 @@
 #include "SIMON.HPP"
 
 
-        
 void simon::setName(std::string n) {
     name = n;    
 }
@@ -56,7 +55,7 @@ void simon::displayStats(){
     std::cout << "     AP:  " << getAp() << std::endl;
     std::cout << "     DMG: " << getDmg() << std::endl;
     std::cout << "     WPN: " << getWeapon() << std::endl;
-    std::cout << "     INV: " << getinItem() << std::endl;
+    std::cout << "     INV: " << inItem << std::endl;
     std::cout << "---------****---------" << std::endl;
     std::cout << "     T.W.A.O.K.K.     " << std::endl;
     std::cout << "-------||+~~+||-------" << std::endl;
