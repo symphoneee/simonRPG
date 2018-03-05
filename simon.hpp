@@ -5,6 +5,7 @@ class simon{
 
     public:
         
+        void setName(std::string);
         void setLvl(double);
         void setHp(double);
         void setStr(double);
@@ -13,6 +14,7 @@ class simon{
         void setAp(double);
         void setinItem(std::string, int);
         void setWeapon(std::string, int);
+        void displayStats();
 
         double getLvl();
         double getHp();
@@ -24,6 +26,7 @@ class simon{
         
         std::string getinItem();
         std::string getWeapon();
+
 
 
     private:
@@ -39,6 +42,7 @@ class simon{
         double inb;
         double wnb;
         
+        std::string name;
         std::string inItem;
         std::string weapon;
 

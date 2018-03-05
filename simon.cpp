@@ -1,6 +1,11 @@
 #include "SIMON.HPP"
 
 
+        
+void simon::setName(std::string n) {
+    name = n;    
+}
+
 void simon::setLvl(double l){
     lvl = l;
 }
@@ -33,6 +38,30 @@ void simon::setinItem(std::string s, int i){
 void simon::setWeapon(std::string w, int i){
     weapon = w;
     wnb = i;
+}
+
+void simon::displayStats(){
+
+
+    std::cout << "                      " << std::endl;
+    std::cout << "                      " << std::endl;
+    std::cout << "-------||+~~+||-------" << std::endl;
+    std::cout << name << "'s current stats:" << std::endl;
+    std::cout << "---------****---------" << std::endl;
+    std::cout << "     LVL: " << getLvl()  << std::endl;
+    std::cout << "     HP:  " << getHp()  << std::endl;
+    std::cout << "     STR: " << getStr() << std::endl;
+    std::cout << "     DEF: " << getDef() << std::endl;
+    std::cout << "     VIT: " << getVit() << std::endl;
+    std::cout << "     AP:  " << getAp() << std::endl;
+    std::cout << "     DMG: " << getDmg() << std::endl;
+    std::cout << "     WPN: " << getWeapon() << std::endl;
+    std::cout << "     INV: " << getinItem() << std::endl;
+    std::cout << "---------****---------" << std::endl;
+    std::cout << "     T.W.A.O.K.K.     " << std::endl;
+    std::cout << "-------||+~~+||-------" << std::endl;
+    std::cout << "                      " << std::endl;
+    std::cout << "                      " << std::endl;
 }
 
 
