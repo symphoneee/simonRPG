@@ -16,7 +16,6 @@ int main () {
     s1.setinItem("Bus Tub", 5);
     s1.setWeapon("Olive Sword", 15);
 
-    
     std::cout << "                      " << std::endl;
     std::cout << "                      " << std::endl;
     std::cout << "-------||+~~+||-------" << std::endl;
@@ -36,7 +35,6 @@ int main () {
     std::cout << "-------||+~~+||-------" << std::endl;
     std::cout << "                      " << std::endl;
     std::cout << "                      " << std::endl;
-    
 
     return 0;
 };
