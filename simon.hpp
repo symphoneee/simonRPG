@@ -27,8 +27,6 @@ class simon{
         std::string getinItem();
         std::string getWeapon();
 
-
-
     private:
 
         double lvl;

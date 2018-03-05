@@ -40,8 +40,6 @@ void simon::setWeapon(std::string w, int i){
 }
 
 void simon::displayStats(){
-
-
     std::cout << "                      " << std::endl;
     std::cout << "                      " << std::endl;
     std::cout << "-------||+~~+||-------" << std::endl;
@@ -62,7 +60,6 @@ void simon::displayStats(){
     std::cout << "                      " << std::endl;
     std::cout << "                      " << std::endl;
 }
-
 
 double simon::getLvl(){
     return lvl;
