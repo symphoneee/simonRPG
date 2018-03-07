@@ -29,19 +29,16 @@ int main () {
     std::cout << " " << std::endl;
     
     s1.setName(name);
-    s1.setLvl(level);
-    s1.setHp(hitpoints);
-    s1.setStr(strength);
-    s1.setDef(defense);
-    s1.setVit(vitality);
-    s1.setAp(abilitypoints);
-    s1.setinItem(inven);
-    s1.setWeapon(weapon);
+    s1.setLvl(11);
+    s1.setHp(50);
+    s1.setStr(24);
+    s1.setDef(23);
+    s1.setVit(27);
+    s1.setAp(10);
+    s1.setinItem("Bus Tub", 5);
+    s1.setWeapon("Olive Sword", 15);
 
     s1.displayStats();
-    
-    std::cin.ignore();
-    std::cin.get();
     
     return 0;
 };

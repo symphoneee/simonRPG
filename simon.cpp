@@ -43,7 +43,7 @@ void simon::displayStats(){
     std::cout << " " << std::endl;
     std::cout << " " << std::endl;
     std::cout << "-------||+~~+||-------" << std::endl;
-   std::cout << name << "'s current stats:" << std::endl;
+    std::cout << name << "'s current stats:" << std::endl;
     std::cout << "---------****---------" << std::endl;
     std::cout << "     LVL: " << getLvl()  << std::endl;
     std::cout << "     HP:  " << getHp()  << std::endl;
