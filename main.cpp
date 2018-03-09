@@ -22,11 +22,23 @@ int main () {
     
     std::cout << " " << std::endl;
     std::cout << " " << std::endl;
+    std::cout << " " << std::endl;
+    std::cout << " " << std::endl;
     std::cout << "Calculating Current Stats ..." << std::endl;
     std::cout << "-----------%%--------------" << std::endl;
     std::cout << "-----------%%--------------" << std::endl;
     std::cout << " " << std::endl;
     std::cout << " " << std::endl;
+    std::cout << " " << std::endl;
+    std::cout << " " << std::endl;
+    std::cout << "      PRESS ENTER        " << std::endl;
+    std::cout << " " << std::endl;
+    std::cout << " " << std::endl;
+    std::cout << " " << std::endl;
+    std::cout << " " << std::endl;
+
+    std::cin.clear();
+    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
     
     s1.setName(name);
     s1.setLvl(11);
