@@ -6,6 +6,7 @@ int main () {
 
     simon s1;    
     std::string name;
+    std::string hate;
     double level;
     double hitpoints;
     double strength;
@@ -19,6 +20,9 @@ int main () {
 
     std::cout << "Enter your name:" << std::endl;
     std::getline(std::cin, name);
+
+    std::cout << "Enter your hate:" << std::endl;
+    std::getline(std::cin, hate);
     
     std::cout << " " << std::endl;
     std::cout << " " << std::endl;
@@ -41,6 +45,7 @@ int main () {
     std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
     
     s1.setName(name);
+    s1.setHate(hate);
     s1.setLvl(11);
     s1.setHp(50);
     s1.setStr(24);
