@@ -8,6 +8,7 @@
 int main () {
 
     KingKid game;
+    
     game.play();
    
     return 0;

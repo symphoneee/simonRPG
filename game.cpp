@@ -2,17 +2,21 @@
 #include "SIMON.HPP"
 #include "TABLES.HPP"
 
-   
+#include <ctype.h>
+
 
 void KingKid::play(){
+    
     simon s1;   
     tables t1;
 
-    std::string name;
-    std::string hate;
+     std::string name;
+     std::string hate;
 
-    std::string tname;
-    std::string thate;
+     int choice;
+
+     std::string tname;
+     std::string thate;
 
     double level;
     double hitpoints;
@@ -24,6 +28,7 @@ void KingKid::play(){
     std::string weapon;
     double ibonus;
     double wbonus;
+    
 
     std::cout << "Enter your name:" << std::endl;
     std::getline(std::cin, name);
@@ -31,6 +36,7 @@ void KingKid::play(){
     std::cout << "Enter your hate:" << std::endl;
     std::getline(std::cin, hate);
     
+
     std::cout << " " << std::endl;
     std::cout << " " << std::endl;
     std::cout << " " << std::endl;
@@ -47,9 +53,11 @@ void KingKid::play(){
     std::cout << " " << std::endl;
     std::cout << " " << std::endl;
     std::cout << " " << std::endl;
+    
 
     std::cin.clear();
     std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+    
     
     s1.setName(name);
     s1.setHate(hate);
@@ -73,8 +81,44 @@ void KingKid::play(){
     t1.setAp(10);
     t1.setinItem("Wobbly Leg", 5);
     t1.setWeapon("Shuv-It", 15);
+    
 
     s1.displayStats();
 
-    t1.displayStats();
+    std::cout << " " << std::endl;
+    std::cout << " " << std::endl;
+    std::cout << " " << std::endl;
+    std::cout << " " << std::endl;
+    std::cout << "-----------%%--------------" << std::endl;
+    std::cout << "-----------%%--------------" << std::endl;
+    std::cout << " " << std::endl;
+    std::cout << " " << std::endl;
+    std::cout << " " << std::endl;
+    std::cout << " " << std::endl;
+    std::cout << " " << std::endl;
+    std::cout << " " << std::endl;
+    std::cout << " " << std::endl;
+    std::cout << " Let the Battle BEGIN! " << std::endl;
+    std::cout << " " << std::endl;
+    std::cout << " " << std::endl;
+    std::cout << "Quick! a dirty table appears ... and you know the servers won't clean it!" << std::endl;
+    std::cout << "They're busy on instagram! " << std::endl;
+    std::cout << "What do you choose? " << std::endl;
+    std::cout << "Enter a number: " << std::endl;
+    std::cout << "1.) Run " << std::endl;
+    std::cout << "2.) Attack " << std::endl;
+    std::cout << "3.) Defend " << std::endl;
+    std::cout << " " << std::endl;
+    std::cout << " " << std::endl;
+    std::cout << " " << std::endl;
+    
+    // std::getline(std::cin, choice);
+    
+     if (!isdigit(choice)) {
+    	std::cout << "That's not a number you stupid fucking busser! " << std::endl;
+
+    }
+
+    
+
 }

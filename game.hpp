@@ -1,4 +1,5 @@
 struct KingKid {
+	
 	void play();
 
 };
