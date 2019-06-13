@@ -4,4 +4,8 @@ add_executable (King_Kid
         
     main.cpp
     simon.hpp
-    simon.cpp)
+    simon.cpp
+    tables.hpp
+    tables.cpp
+    game.hpp
+    game.cpp)

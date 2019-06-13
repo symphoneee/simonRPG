@@ -1,50 +1,49 @@
-#include "SIMON.HPP"
+#include "TABLES.HPP"
 
 
-
-void simon::setName(std::string n) {
+void tables::setName(std::string n) {
     name = n;    
 }
 
-void simon::setHate(std::string h) {
+void tables::setHate(std::string h) {
     hate = h;    
 }
 
-void simon::setLvl(double l){
+void tables::setLvl(double l){
     lvl = l;
 }
 
-void simon::setHp(double h){
+void tables::setHp(double h){
     hp = h;
 }
 
-void simon::setStr(double s){
+void tables::setStr(double s){
     str = s;
 }
 
-void simon::setDef(double d){
+void tables::setDef(double d){
     def = d;
 }
 
-void simon::setVit(double v){
+void tables::setVit(double v){
     vit = v;
 }
 
-void simon::setAp(double a){
+void tables::setAp(double a){
     ap = a;
 }
 
-void simon::setinItem(std::string s, int i){
+void tables::setinItem(std::string s, int i){
     inItem = s;
     inb = i;
 }
 
-void simon::setWeapon(std::string w, int i){
+void tables::setWeapon(std::string w, int i){
     weapon = w;
     wnb = i;
 }
 
-void simon::displayStats(){
+void tables::displayStats(){
     std::cout << " " << std::endl;
     std::cout << " " << std::endl;
     std::cout << "-------||+~~+||-------" << std::endl;
@@ -63,36 +62,35 @@ void simon::displayStats(){
     std::cout << "     T.W.A.O.K.K.     " << std::endl;
     std::cout << "-------||+~~+||-------" << std::endl;
     std::cout << "...and why do you hate " << hate << 
-                 " so much bro?? " << std::endl;
+                 "so much bro?? " << std::endl;
     std::cout << " " << std::endl;
     std::cout << " " << std::endl;
 }
 
-double simon::getLvl(){
+double tables::getLvl(){
     return lvl;
 }
 
-double simon::getHp(){
+double tables::getHp(){
     return hp;
 }
 
-double simon::getStr(){
+double tables::getStr(){
     return str;
 }
 
-double simon::getDef(){
+double tables::getDef(){
     return (vit / 2) + def + inb;
 }
 
-double simon::getVit(){
+double tables::getVit(){
     return vit;
 }
 
-double simon::getAp(){
+double tables::getAp(){
     return ap;
 }
 
-double simon::getDmg(){
+double tables::getDmg(){
     return (str / 2) + wnb;
 }
-

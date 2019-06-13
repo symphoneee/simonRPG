@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 
-class simon{
+class tables{
 
     public:
         
@@ -47,4 +47,3 @@ class simon{
         std::string weapon;
 
 };
-
