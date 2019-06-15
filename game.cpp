@@ -13,7 +13,7 @@ void KingKid::play(){
      std::string name;
      std::string hate;
 
-     int choice;
+     int choice = 3;
 
      std::string tname;
      std::string thate;
@@ -110,11 +110,11 @@ void KingKid::play(){
     std::cout << "3.) Defend " << std::endl;
     std::cout << " " << std::endl;
     std::cout << " " << std::endl;
-    std::cout << " " << std::endl;
+    
     
     // std::getline(std::cin, choice);
     
-     if (!isdigit(choice)) {
+     if (choice != 3) {
     	std::cout << "That's not a number you stupid fucking busser! " << std::endl;
 
     }
