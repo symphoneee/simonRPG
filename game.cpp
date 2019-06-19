@@ -126,6 +126,25 @@ void KingKid::play(){
 
      }
 
+    std::cout << "What do you choose? " << std::endl;
+    std::cout << "Enter a number: " << std::endl;
+    std::cout << "1.) Run " << std::endl;
+    std::cout << "2.) Attack " << std::endl;
+    std::cout << "3.) Defend " << std::endl;
+    std::cout << " " << std::endl;
+    std::cout << " " << std::endl;
+
+     std::cin >> choice;
+
+     if (choice == 3){
+     	double temp = t1.getHp() - s1.getStr();
+     	t1.setHp(temp);
+     	t1.displayStats();
+
+     }
+
+    
+
     if (choice != 3) {
     	std::cout << "That's not a number you stupid fucking busser! " << std::endl;
     }
