@@ -12,8 +12,9 @@ void KingKid::play(){
 
      std::string name;
      std::string hate;
+     std::string hate2;
 
-     int choice = 3;
+     int choice;
 
      std::string tname;
      std::string thate;
@@ -54,9 +55,10 @@ void KingKid::play(){
     std::cout << " " << std::endl;
     std::cout << " " << std::endl;
     
-
+    /*
     std::cin.clear();
     std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+    */
     
     
     s1.setName(name);
@@ -112,12 +114,12 @@ void KingKid::play(){
     std::cout << " " << std::endl;
     
     
-    // std::getline(std::cin, choice);
-    
-     if (choice != 3) {
-    	std::cout << "That's not a number you stupid fucking busser! " << std::endl;
+     std::cin >> choice;
 
+    if (choice != 3) {
+    	std::cout << "That's not a number you stupid fucking busser! " << std::endl;
     }
+   
 
     
 
