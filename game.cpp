@@ -105,6 +105,9 @@ void KingKid::play(){
     std::cout << " " << std::endl;
     std::cout << "Quick! a dirty table appears ... and you know the servers won't clean it!" << std::endl;
     std::cout << "They're busy on instagram! " << std::endl;
+
+    t1.displayStats();
+
     std::cout << "What do you choose? " << std::endl;
     std::cout << "Enter a number: " << std::endl;
     std::cout << "1.) Run " << std::endl;
@@ -115,6 +118,13 @@ void KingKid::play(){
     
     
      std::cin >> choice;
+
+     if (choice == 3){
+     	double temp = t1.getHp() - s1.getStr();
+     	t1.setHp(temp);
+     	t1.displayStats();
+
+     }
 
     if (choice != 3) {
     	std::cout << "That's not a number you stupid fucking busser! " << std::endl;
